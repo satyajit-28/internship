@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% block extra_head %}{% endblock %}
+</head>
+
+<body>
+    <nav>Home | Books | About</nav>
+
+    {% block content %}
+    <p>Default content (shown if a child does not override this)</p>
+    {% endblock %}
+
+    <footer>© 2026</footer>
+</body>
+
+</html>
