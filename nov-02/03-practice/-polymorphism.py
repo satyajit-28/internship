@@ -30,4 +30,4 @@ class Product:
 
 laptop = Product("Laptop", 55000, 5)
 mouse = Product("Mouse", 500, 20)
-
+#command
